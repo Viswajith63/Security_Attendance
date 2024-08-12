@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Guard Attendance Tracking</title>
+    <style>
+        body {
+                font-family: Arial, sans-serif;
+                background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG9mZmljZXxlbnwwfDB8MHx8fDI%3D');
+                background-repeat: no-repeat;
+                background-size: 100% 200%;
+                background-color: aliceblue;
+                align-items: center;
+                margin: 0;
+                padding: 20px;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            form {
+                
+                align-items: center;
+            }
+
+            input[type="file"] {
+                margin-bottom: 15px;
+            }
+            label,input{
+                margin-bottom: 15px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Security Guard Attendance Tracking</h1>
+    <form id="selfieForm" method="post" enctype="multipart/form-data">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="employeeId" required /><br>
+        
+        <label for="selfie">Upload Selfie:</label>
+        <input type="file" id="selfie" accept="image/*" required /><br>
+
+        
+        <button type="submit">Upload Selfie</button></form>
+    <script src="script.js"></script>
+</body>
+</html>
